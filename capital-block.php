@@ -16,9 +16,10 @@
 defined( 'ABSPATH' ) || die();
 
 add_action( 'enqueue_block_editor_assets', function() {
+	// Random image.
 	wp_enqueue_script(
 		'myplugin-block',
-		plugins_url( 'block.js', __FILE__ ),
+		plugins_url( 'block-extended.js', __FILE__ ),
 		[ 'wp-blocks', 'wp-element' ]
 	);
 } );
