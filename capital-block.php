@@ -22,4 +22,10 @@ add_action( 'enqueue_block_editor_assets', function() {
 		plugins_url( 'block-extended.js', __FILE__ ),
 		[ 'wp-blocks', 'wp-element' ]
 	);
+	// CSV
+	wp_enqueue_script(
+		'myplugin-block-csv',
+		plugins_url( 'block-csv.js', __FILE__ ),
+		[ 'wp-blocks', 'wp-element' ]
+	);
 } );
